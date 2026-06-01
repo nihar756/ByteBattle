@@ -45,7 +45,7 @@ export default function AssessmentPage() {
       .catch((err) => console.error("Error fetching questions:", err));
   }, []);
 
-  /* ---------------------- CHECK RESUME ---------------------- */
+  /* ---------------------- CHECK RESUME from the uploaded attempt ---------------------- */
   useEffect(() => {
     const savedStart = localStorage.getItem("assessmentStartTime");
     const alreadyStarted = localStorage.getItem("assessmentStarted");
